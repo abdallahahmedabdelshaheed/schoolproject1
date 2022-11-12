@@ -1,0 +1,152 @@
+
+@font-face{ 
+    font-family:  fontfamily1 ;
+    src: url(Courgette-Regular.ttf) ;
+ }
+
+body{
+    margin:0px;
+    
+}
+
+#backgroundimage{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin:0px;
+    border: 0px;
+    top: 0px;
+    left:0px;
+    filter: blur(6px);
+    background-image: url(welcomstyleimage/backgroundimage.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -10000000000;
+}
+
+#body{
+    width: 500px;
+    height: auto;
+    background-color: #DFDFFF;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    padding-top:20px ;
+    padding-bottom:20px ;
+    padding-left:10px ;
+    padding-right:10px ;
+    border-radius: 20px;
+}
+
+#body h1{
+    font-family: fontfamily1;
+    font-size: 64px;
+    margin-bottom:0px;
+    line-height: 30px;
+    color: #000003;
+    text-align: center;
+}
+
+#body h3{
+    font-family:sans-serif;
+    font-size: 16px;
+    color:#000003;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+#body h2{
+    font-family:sans-serif;
+    font-size: 18px;
+    color:#000003;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#loginlabel{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 24px;
+    color:#000003;
+    
+}
+
+#body h5{
+    font-family: sans-serif;
+    margin-left: 20px;
+    color:#000003;
+    font-size: 18px;
+}
+
+.logbuttons{
+    width: 91%;
+    height:60px;
+    overflow: hidden;
+    border-radius: 5px;
+    border:1px solid #000003;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background-color: #DFDFFF;
+    position: relative;
+    padding: 0px;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.logbuttons span{
+    text-align: left;
+    margin-left:40px;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.logbuttons img{
+    width:40px;
+    position: absolute;
+    right: 50px;
+    top: 7px;
+}
+
+.logbuttons:hover{
+    background-color: #0000FF;
+    color: #DFDFFF;
+    border: #DFDFFF;
+    scale: 1.02;
+}
+
+@media only screen and (max-width: 530px){
+
+  
+#backgroundimage{
+    display: none;
+}
+
+#body{
+    width: 100%;
+    height: 100%;
+    background-color: #DFDFFF;
+    position: absolute;
+    right:0px;
+    bottom:0px;
+    padding-top:20px ;
+    padding-bottom:40px ;
+    padding-left:10px ;
+    padding-right:10px ;
+    border-radius: 0px;
+}
+    
+body{
+    background-color: #DFDFFF;
+}
+
+}
+
+
+
+
